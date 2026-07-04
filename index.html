@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The Complete History of Artificial Intelligence</title>
+  <meta name="description" content="A premium static GitHub Pages timeline about the complete history of artificial intelligence."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="site-header">
+    <a class="logo" href="#top">Turing <span>&gt; Today</span></a>
+    <nav>
+      <a href="#timeline">Timeline</a>
+      <a href="#companies">Companies</a>
+      <a href="#people">People</a>
+      <a href="#references">References</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>The Complete History of Artificial Intelligence</h1>
+        <p class="hero-text">A clean, scrollable timeline from Turing and symbolic AI to deep learning, transformers, ChatGPT, Claude, Gemini, Llama, NVIDIA GPUs, cloud infrastructure, and AI agents.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#timeline">Explore timeline</a>
+          <a class="secondary" href="#references">View sources</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+      <div class="section-title">
+        <h2>Each milestone locks into place, then hands the stage to the next card.</h2>
+      </div>
+      <div class="timeline-layout">
+        <div id="timelineEra" class="timeline-era-current"></div>
+        <div class="timeline-content" id="timelineContent"></div>
+        <aside class="year-rail">
+          <div class="rail-line"></div>
+          <div id="yearRail"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="companies" class="companies">
+      <div class="section-title">
+        <h2>Companies and labs in the AI race</h2>
+      </div>
+      <div id="companyGrid" class="company-grid"></div>
+    </section>
+
+
+    <section id="people" class="people">
+      <div class="section-title">
+        <h2>Researchers, builders, and leaders behind the breakthroughs</h2>
+      </div>
+      <div id="peopleGrid" class="people-grid"></div>
+    </section>
+
+    <section id="references" class="references">
+      <div class="section-title">
+        <h2>References</h2>
+      </div>
+      <div id="referenceList" class="reference-list"></div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog">
+    <button class="close-btn" id="closeDialog">×</button>
+    <div class="dialog-grid">
+      <img id="dialogImage" alt=""/>
+      <div>
+        <p class="eyebrow" id="dialogMeta"></p>
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogSubtitle" class="dialog-subtitle"></p>
+        <p id="dialogWhy"></p>
+        <ul id="dialogDetails"></ul>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
